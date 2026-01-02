@@ -165,5 +165,49 @@ export const photos: Photo[] = [
     story: "Esta fotografía captura...",
     imageUrl: "/tomates.jpg",
     thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 16,
+    title: "Caballo",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/caballo.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 17,
+    title: "Baile de los negros",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/baile-negro.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 18,
+    title: "Señora Maria",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/señora-maria.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 19,
+    title: "Recolector de uvas",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/recolector.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
   }
 ];
