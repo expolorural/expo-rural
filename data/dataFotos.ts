@@ -152,7 +152,7 @@ export const photos: Photo[] = [
     technique: "Fotografía de paisaje",
     date: "2024",
     story: "Esta fotografía captura...",
-    imageUrl: "/tio-chico.jpg",
+    imageUrl: "/tio-chicho.jpg",
     thumbnailUrl: "/images/thumbnails/1.jpg"
   },
   {

@@ -20,17 +20,19 @@ h1 {
 .contenido {
     width: 1080px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .texto {
-    font-size: 25px;
+    font-size: clamp(1rem, 5vw, 1.5rem);
     margin: 15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .imagen {
     float: right;
-    margin: 0 25px;
+    margin: 0 1rem;
 }
 
 .imagen img {
