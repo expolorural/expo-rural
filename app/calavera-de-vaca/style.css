@@ -8,3 +8,28 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+
+h1 {
+    font-family: Helvetica;
+}
+
+.contenido {
+    width: 1080px;
+    display: flex;
+}
+
+.texto {
+    font-size: 25px;
+    margin: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imagen {
+    float: right;
+    margin: 0 25px;
+}
+
+.imagen img {
+    height: 550px;
+    width: auto;
+}
