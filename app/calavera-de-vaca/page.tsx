@@ -8,8 +8,8 @@ export default function Home() {
         <div className="page">
             <Header/>
             
-            <img src="calavera.jpg"></img>
-            
+            <img src="calavera.png"></img>
+
             <Footer/>
         </div>
   );
