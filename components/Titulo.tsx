@@ -1,5 +1,5 @@
 import "./../styles/Main.css"
-import Image from "next/image";
+import Polaroid from "./Polaroid";
 
 export default function Main() {
     return (
@@ -11,9 +11,10 @@ export default function Main() {
                     </h1>
                     Soy una fotografa
                 </div>
-                <img src="/vale.png"></img>
+                <div className="wrapper">
+                    <Polaroid url="/vale.png"/>
+                </div>
             </div>
-            Main
         </main>
     );
 }

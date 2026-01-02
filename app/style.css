@@ -8,3 +8,36 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1200px;
+}
+
+.galeria-foto {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+}
+
+.galeria-foto.reverse {
+    flex-direction: row-reverse;
+}
+
+.texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+}
+
+.galeria-foto img {
+    max-height: 800px;
+    object-fit: cover;
+}

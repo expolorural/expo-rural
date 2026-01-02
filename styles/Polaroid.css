@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poor Story', cursive;
+  background: #bdffbd;
+}
+
+.polaroid {
+    height: 310px;
+    width: 290px;
+  background: #fff;
+  padding: 5px 5px 15px 5px;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.polaroid > img{
+  height: 320px;
+  width: auto;
+  object-fit: cover;
+}
+
+.item {
+  height: 350px;
+  width: 300px;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
