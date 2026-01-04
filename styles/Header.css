@@ -1,5 +1,5 @@
 header {
-    background-color: aqua;
+    background-color: lightblue;
     width: 100%;
     display: flex;
     justify-self: flex-start;
@@ -7,4 +7,14 @@ header {
     align-items: center;
     height: 120px;
     margin-bottom: 25px;
+    gap: 15px;
+}
+
+.a-div {
+    width: 120px;
+    height: 40px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

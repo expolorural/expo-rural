@@ -4,3 +4,8 @@
   --foreground: #171717;
 }
 
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+

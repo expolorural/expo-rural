@@ -1,4 +1,4 @@
-import "./../styles/Main.css"
+import "./../styles/Titulo.css"
 import Polaroid from "./Polaroid";
 
 export default function Main() {
@@ -12,7 +12,8 @@ export default function Main() {
                     Soy una fotografa
                 </div>
                 <div className="wrapper">
-                    <Polaroid url="/vale.png"/>
+                    <Polaroid url="/vale.jpg"/>
+                    <Polaroid url="/vale2.jpg"/>
                 </div>
             </div>
         </main>
