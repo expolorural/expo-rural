@@ -222,6 +222,8 @@ body {
     .page h1 {
         font-size: 2rem;
         margin: 15px 5px 10px 10px;
+        width: 100vh;
+        max-width: 100vh;
     }
     
     .contenido {
@@ -243,6 +245,7 @@ body {
         border-radius: 8px;
         height: 100%;
         width: auto;
+        max-width: 100vh;
     }
     
     .navigation {
