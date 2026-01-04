@@ -74,7 +74,22 @@ export default async function PhotoPage({
             <img src={photo.imageUrl}></img> 
         </div>
       </div>
-
+      <div className="navigation">
+        {prevPhoto ? (
+          <Link href={`/galeria/${prevPhoto.id}`} className="nav-button">
+            ← Anterior
+          </Link>
+        ) : (
+          <div className="nav-button disabled">← Anterior</div>
+        )}
+        {nextPhoto ? (
+          <Link href={`/galeria/${nextPhoto.id}`} className="nav-button">
+            Siguiente →
+          </Link>
+        ) : (
+          <div className="nav-button disabled">Siguiente →</div>
+        )}
+      </div>
       <Footer/>
     </div>
   );

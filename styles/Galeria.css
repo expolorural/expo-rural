@@ -1,47 +1,80 @@
 .page {
-    background-color: rgba(248, 250, 255, 0.39);
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-size: 20px;
     margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
 .titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 50%;
+    max-width: 800px;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-h2 {
+.titulo h2 {
     font-weight: 400;
-    margin: 15px 0 -20px 0;
+    margin: 15px 0 -10px 0;
     text-decoration: underline;
+    text-decoration-color: #6b8e23;
+    text-underline-offset: 8px;
+    color: #5a7d3a;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
 }
 
 .titulo-lorural {
-    font-family: "Kaushan Script", "Raleway";
-    font-size: 7rem;
-    margin: 0;
+    font-family: "Kaushan Script", "Raleway", cursive;
+    font-size: clamp(3rem, 10vw, 7rem);
+    margin: 10px 0 20px 0;
+    color: #3e5c2e;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titulo p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.8;
+    color: #555;
+    max-width: 700px;
 }
 
 .galeria {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 1200px;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    gap: 40px;
 }
 
 .galeria-foto {
-    margin-bottom: 25px;
     display: flex;
     flex-direction: row;
-    height: 400px;
     width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    min-height: 250px;
+}
+
+.galeria-foto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(107, 142, 35, 0.2);
 }
 
 .galeria-foto.reverse {
@@ -52,12 +85,146 @@ h2 {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff 0%, #f9fdf7 100%);
+}
+
+.galeria-foto.reverse .texto {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.texto h1 {
+    font-family: "Kaushan Script", "Raleway", cursive;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: #3e5c2e;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+}
+
+.texto p {
+    font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
 }
 
 .galeria-foto img {
-    max-height: 800px;
+    width: 50%;
+    height: 100%;
+    max-height: 350px;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.galeria-foto:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive para tablets */
+@media (max-width: 968px) {
+    .galeria {
+        padding: 15px;
+        gap: 30px;
+    }
+    
+    .galeria-foto {
+        min-height: 300px;
+    }
+    
+    .texto {
+        padding: 30px;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .titulo {
+        padding: 30px 15px;
+        max-width: 100%;
+    }
+    
+    .galeria {
+        gap: 25px;
+        padding: 10px;
+    }
+    
+    .galeria-foto,
+    .galeria-foto.reverse {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .texto {
+        width: 100%;
+        padding: 25px 20px;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    .texto h1 {
+        font-size: 2rem;
+    }
+    
+    .texto p {
+        font-size: 1rem;
+    }
+    
+    .galeria-foto img {
+        width: 100%;
+        min-height: 250px;
+        max-height: 400px;
+    }
+}
+
+/* Responsive para móviles pequeños */
+@media (max-width: 480px) {
+    .titulo {
+        padding: 20px 10px;
+    }
+    
+    .titulo h2 {
+        font-size: 1rem;
+    }
+    
+    .titulo-lorural {
+        font-size: 2.5rem;
+    }
+    
+    .titulo p {
+        font-size: 0.9rem;
+    }
+    
+    .texto {
+        padding: 20px 15px;
+    }
+    
+    .texto h1 {
+        font-size: 1.6rem;
+    }
+    
+    .texto p {
+        font-size: 0.95rem;
+    }
+    
+    .galeria-foto img {
+        min-height: 200px;
+    }
+}
+
+/* Decoración adicional con tema natural */
+.titulo::before {
+    content: "🌿";
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.titulo::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #6b8e23, transparent);
+    margin-top: 20px;
 }
