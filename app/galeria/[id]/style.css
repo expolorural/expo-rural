@@ -212,9 +212,10 @@ body {
 
     .imagen img {
         width: 100%;
+        max-width: 600px;
         height: auto;
         border-radius: 8px;
-        object-fit: contain;
+        object-fit: cover;
     }
     
     .navigation {
