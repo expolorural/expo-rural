@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import { photos } from '@/data/dataFotos';
 import { Metadata } from 'next';
 import Header from '@/components/Header';
-import "./style.css";
+import "./fotos.css";
 import Footer from '@/components/Footer';
 
 // Genera las rutas estáticas en build time

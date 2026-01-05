@@ -13,7 +13,7 @@ export default function Header() {
 
     return (
         <header>
-            <Link href="/" className="logo">
+            <Link href="/galeria" className="logo">
                 <img src="/Logo.png"/>
                 PameVale
             </Link>
@@ -29,7 +29,7 @@ export default function Header() {
 
             <nav className={isMenuOpen ? 'open' : ''}>
                 <Link 
-                    href="/" 
+                    href="/galeria" 
                     className="nav-link"
                     onClick={() => setIsMenuOpen(false)}
                 >
@@ -43,14 +43,14 @@ export default function Header() {
                     Galería
                 </Link>
                 <Link 
-                    href="/sobre-mi" 
+                    href="/galeria" 
                     className="nav-link"
                     onClick={() => setIsMenuOpen(false)}
                 >
                     Sobre Mí
                 </Link>
                 <Link 
-                    href="/contacto" 
+                    href="/galeria" 
                     className="nav-link"
                     onClick={() => setIsMenuOpen(false)}
                 >
