@@ -1,8 +1,275 @@
 footer {
-    background-color: green;
+    background: linear-gradient(135deg, #3e5c2e 0%, #2d4521 100%);
     display: flex;
-    justify-self: flex-end;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 60px 40px 30px 40px;
+    margin-top: 80px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decoración superior */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #6b8e23, #8fbc4f, #6b8e23, transparent);
+}
+
+/* Contenedor principal del footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+/* Sección de marca/logo */
+.footer-brand {
+    flex: 1;
+    max-width: 350px;
+}
+
+.footer-logo {
+    font-family: "Kaushan Script", cursive;
+    font-size: 2.5rem;
+    color: #e8f5e9;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo::before {
+    font-size: 2rem;
+}
+
+.footer-description {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* Sección de contacto */
+.footer-contact {
+    flex: 1;
+    max-width: 350px;
+}
+
+.footer-section-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #e8f5e9;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    color: #8fbc4f;
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    font-size: 1.3rem;
+    min-width: 24px;
+}
+
+.contact-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #8fbc4f;
+}
+
+/* Sección de redes sociales */
+.footer-social {
+    flex: 1;
+    max-width: 300px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #e8f5e9;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.social-link:hover {
+    background: #6b8e23;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(107, 142, 35, 0.4);
+}
+
+/* Línea divisora */
+.footer-divider {
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    margin: 20px 0;
+}
+
+/* Copyright */
+.footer-bottom {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.footer-bottom a {
+    color: #8fbc4f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #a8d96f;
+}
+
+/* Responsive para tablets */
+@media (max-width: 968px) {
+    footer {
+        padding: 50px 30px 25px 30px;
+        margin-top: 60px;
+    }
+
+    .footer-content {
+        gap: 40px;
+    }
+
+    .footer-logo {
+        font-size: 2rem;
+    }
+
+    .footer-section-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 20px 20px 20px;
+        margin-top: 50px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-brand,
+    .footer-contact,
+    .footer-social {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+    .contact-item:hover {
+        transform: translateX(0);
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .footer-section-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsive para móviles pequeños */
+@media (max-width: 480px) {
+    footer {
+        padding: 30px 15px 15px 15px;
+        margin-top: 40px;
+    }
+
+    .footer-content {
+        gap: 30px;
+    }
+
+    .footer-logo {
+        font-size: 1.8rem;
+    }
+
+    .footer-logo::before {
+        font-size: 1.5rem;
+    }
+
+    .footer-section-title {
+        font-size: 1.1rem;
+    }
+
+    .contact-item {
+        font-size: 0.95rem;
+    }
+
+    .footer-description {
+        font-size: 0.95rem;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.85rem;
+    }
 }
