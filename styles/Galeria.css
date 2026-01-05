@@ -53,7 +53,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 20px;
     gap: 40px;
 }
@@ -62,6 +62,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    max-height: 500px;
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -69,7 +70,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
     color: inherit;
-    min-height: 250px;
+    min-height: 300px;
 }
 
 .galeria-foto:hover {
@@ -82,13 +83,14 @@
 }
 
 .texto {
-    width: 50%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 40px;
     background: linear-gradient(135deg, #ffffff 0%, #f9fdf7 100%);
+    min-width: 350px;
 }
 
 .galeria-foto.reverse .texto {
@@ -99,7 +101,6 @@
 .texto h1 {
     font-family: "Kaushan Script", "Raleway", cursive;
     font-size: clamp(1.8rem, 3vw, 2.5rem);
-    color: #3e5c2e;
     margin: 0 0 15px 0;
     line-height: 1.2;
 }
@@ -111,12 +112,24 @@
     margin: 0;
 }
 
+/* Contenedor de imagen flexible */
+.galeria-foto-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #f5f5f5;
+    min-width: 300px;
+}
+
 .galeria-foto img {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    max-height: 350px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     transition: transform 0.5s ease;
+    max-height: 600px;
 }
 
 .galeria-foto:hover img {
@@ -131,11 +144,16 @@
     }
     
     .galeria-foto {
-        min-height: 300px;
+        min-height: 280px;
     }
     
     .texto {
         padding: 30px;
+        min-width: 300px;
+    }
+    
+    .galeria-foto-imagen {
+        min-width: 250px;
     }
 }
 
@@ -154,11 +172,14 @@
     .galeria-foto,
     .galeria-foto.reverse {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         min-height: auto;
     }
     
     .texto {
         width: 100%;
+        min-width: auto;
         padding: 25px 20px;
         align-items: center !important;
         text-align: center !important;
@@ -172,10 +193,19 @@
         font-size: 1rem;
     }
     
+    .galeria-foto-imagen {
+        width: 95%;
+        min-width: auto;
+        min-height: 350px;
+        max-height: 500px;
+    }
+    
     .galeria-foto img {
         width: 100%;
-        min-height: 250px;
-        max-height: 400px;
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+        border-radius: 9px;
     }
 }
 
@@ -209,8 +239,13 @@
         font-size: 0.95rem;
     }
     
-    .galeria-foto img {
+    .galeria-foto-imagen {
         min-height: 200px;
+        max-height: 400px;
+    }
+    
+    .galeria-foto img {
+        max-height: 400px;
     }
 }
 

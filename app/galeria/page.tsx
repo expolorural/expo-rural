@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Titulo from "@/components/Titulo";
 import { photos } from "@/data/dataFotos";
 import "@/styles/Galeria.css";
 
@@ -26,11 +25,12 @@ export default function Home() {
               <h1>{foto.title}</h1>
               <p>{foto.description}</p>
             </div>
-            <img src={foto.imageUrl} />
+            <div className="galeria-foto-imagen">
+              <img src={foto.imageUrl} alt={foto.title} />
+            </div>
           </Link>
         ))}
       </div>
-
       <Footer/>
     </div>
   );

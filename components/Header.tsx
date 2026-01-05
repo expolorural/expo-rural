@@ -1,14 +1,62 @@
-import "./../styles/Header.css"
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import "./../styles/Header.css";
 
 export default function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <header>
-            <div className="a-div">
-                <a href={`/galeria`}>Blog</a>
+            <Link href="/" className="logo">
+                <img src="/Logo.png"/>
+                PameVale
+            </Link>
+
+            <div 
+                className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
+                onClick={toggleMenu}
+            >
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div className="a-div">
-                <a>Lo Rural</a>
-            </div>
+
+            <nav className={isMenuOpen ? 'open' : ''}>
+                <Link 
+                    href="/" 
+                    className="nav-link"
+                    onClick={() => setIsMenuOpen(false)}
+                >
+                    Inicio
+                </Link>
+                <Link 
+                    href="/galeria" 
+                    className="nav-link"
+                    onClick={() => setIsMenuOpen(false)}
+                >
+                    Galería
+                </Link>
+                <Link 
+                    href="/sobre-mi" 
+                    className="nav-link"
+                    onClick={() => setIsMenuOpen(false)}
+                >
+                    Sobre Mí
+                </Link>
+                <Link 
+                    href="/contacto" 
+                    className="nav-link"
+                    onClick={() => setIsMenuOpen(false)}
+                >
+                    Contacto
+                </Link>
+            </nav>
         </header>
     );
 }
