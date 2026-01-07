@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { photos } from "@/data/dataFotos";
 import "@/styles/Galeria.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   const fotos = photos.filter(foto => {return foto.main == true});
@@ -34,6 +35,7 @@ export default function Home() {
         ))}
       </div>
       <Footer/>
+      <Analytics/>
     </div>
   );
 }

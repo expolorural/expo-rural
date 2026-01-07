@@ -6,6 +6,7 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import "./fotos.css";
 import Footer from '@/components/Footer';
+import { Analytics } from '@vercel/analytics/next';
 
 // Genera las rutas estáticas en build time
 export async function generateStaticParams() {
@@ -128,6 +129,7 @@ export default async function PhotoPage({
       </div>
       
       <Footer/>
+      <Analytics/>
     </div>
   );
 }
