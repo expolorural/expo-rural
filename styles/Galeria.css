@@ -34,17 +34,20 @@
 
 .titulo-lorural {
     font-family: "Kaushan Script", "Raleway", cursive;
-    font-size: clamp(3rem, 10vw, 7rem);
-    margin: 10px 0 20px 0;
+    font-size: clamp(4rem, 15vw, 9rem);
+    margin: 10px 0 0 0;
     color: #3e5c2e;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .titulo p {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-size: clamp(1.2rem, 2.2vw, 1.2rem);
     line-height: 1.8;
     color: #555;
     max-width: 700px;
+    margin: 30px 0 0 0;
+    padding: 0;
+    text-align: left;
 }
 
 .galeria {
@@ -127,7 +130,7 @@
 
 .galeria-foto img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
     object-position: center;
     transition: transform 0.5s ease;
@@ -165,6 +168,10 @@
         padding: 30px 15px;
         max-width: 100%;
     }
+
+    .titulo p {
+        width: 85%;
+    }
     
     .galeria {
         gap: 25px;
@@ -180,7 +187,7 @@
     }
     
     .texto {
-        width: 100%;
+        width: 80%;
         min-width: auto;
         padding: 25px 20px;
         align-items: center !important;
@@ -199,13 +206,13 @@
         width: 95%;
         min-width: auto;
         min-height: 350px;
-        max-height: 500px;
+        max-height: 550px;
     }
     
     .galeria-foto img {
         width: 100%;
         height: auto;
-        max-height: 500px;
+        max-height: 550px;
         object-fit: contain;
         border-radius: 9px;
     }
@@ -222,11 +229,12 @@
     }
     
     .titulo-lorural {
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
     
     .titulo p {
-        font-size: 0.9rem;
+        width: 85%;
+        font-size: 1.1rem;
     }
     
     .texto {

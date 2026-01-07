@@ -5,6 +5,9 @@ export const photos: Photo[] = [
     id: 1,
     title: "Calavera de vaca en la pared",
     url: "calavera-de-foto",
+    venta: {
+      "Fotografía 30x40 - Marco Negro": "$30.000"
+    },
     main: true,
     description: "Primera luz sobre la cordillera",
     technique: "Fotografía de paisaje",
@@ -42,6 +45,10 @@ export const photos: Photo[] = [
     title: "Un pozo solitario ",
     url: "a",
     main: true,
+    venta: {
+      "Fotografía 20x30 - Marco blanco": "$15.000",
+      "Fotografía 30x40 - Marco blanco": "$30.000"
+    },
     description: "Un pozo en el bosque",
     technique: "Fotografía de paisaje",
     date: "2024",
@@ -54,6 +61,10 @@ export const photos: Photo[] = [
     title: "La garita y el atardecer",
     url: "a",
     main: true,
+    venta: {
+      "Fotografía 20x30 - Marco Blanco / Simulacion Madera": "$15.000",
+      "Fotografía 30x40 - Marco Blanco / Simulacoin Madera": "$30.000" 
+    },
     description: "Una calle",
     technique: "Fotografía de paisaje",
     date: "2024",
@@ -65,6 +76,10 @@ export const photos: Photo[] = [
     id: 6,
     title: "Collage Cordillerano",
     url: "a",
+    venta: {
+      "Fotografía 40x50 - Marco en madera de caucho + paspartú": "$45.000",
+      "Fotografía 30x40 - Marco Blanco": "$35.000"
+    },
     main: true,
     description: "Primera luz sobre la cordillera",
     technique: "Fotografía de paisaje",
@@ -126,6 +141,10 @@ export const photos: Photo[] = [
     title: "Rio Maule y sus soledades",
     url: "a",
     main: true,
+    venta: {
+      "Fotografía 20x30 - Marco Negro": "$15.000",
+      "Fotografía 30x40 - Marco Negro": "$25.000"
+    },
     description: "Una foto de agua",
     technique: "Fotografía de paisaje",
     date: "2024",
@@ -138,6 +157,10 @@ export const photos: Photo[] = [
     title: "Un Roble Solitario",
     url: "a",
     main: true,
+    venta: {
+      "Fotografía 20x30 - Marco Blanco": "$15.000",
+      "Fotografía 30x40 - Marco Blanco": "$25.000"
+    },
     description: "Soy ese",
     technique: "Fotografía de paisaje",
     date: "2024",
@@ -150,6 +173,10 @@ export const photos: Photo[] = [
     title: "Tatas camino a la Iglesia",
     url: "a",
     main: true,
+    venta: {
+      "Fotografía 20x30 - Marco simulación madera": "$15.000",
+      "Fotografía 30x40 - Marco simulacion madera": "$30.000"
+    },
     description: "Que viva el amor",
     technique: "Fotografía de paisaje",
     date: "2024",
@@ -162,6 +189,10 @@ export const photos: Photo[] = [
     title: "Tío Chicho regando entre las chiras",
     url: "a",
     main: true,
+    venta: {
+      "Fotografía 20x30 - Marco simulación madera": "$15.000",
+      "Fotografía 30x40 - Marco simulación madera": "$25.000"
+    },
     description: "Un grande",
     technique: "Fotografía de paisaje",
     date: "2024",
@@ -174,6 +205,9 @@ export const photos: Photo[] = [
     title: "Roberto recolectando tomates",
     url: "a",
     main: true,
+    venta: {
+      "Fotografía 20x30 - Marco Blanco": "$15.000"
+    },
     description: "Primera luz sobre la cordillera",
     technique: "Fotografía de paisaje",
     date: "2024",
@@ -183,14 +217,83 @@ export const photos: Photo[] = [
   },
   {
     id: 16,
-    title: "Caballo",
+    title: "Animales",
     url: "a",
     main: true,
+    venta: {
+      "Fotografía 30x40 - Marco Blanco": "$30.000",
+      "Fotografía 20x30 - Marco Blanco": "$20.000"
+    },
     description: "Primera luz sobre la cordillera",
     technique: "Fotografía de paisaje",
     date: "2024",
     story: "Él sólo comía. Yo vi una escena de timidez, pureza y ternura",
     imageUrl: "/caballo.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 16,
+    title: "Patos",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Él sólo comía. Yo vi una escena de timidez, pureza y ternura",
+    imageUrl: "/patos.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 16,
+    title: "Cabra",
+    url: "a",
+    venta: {
+      "Fotografía 20x30 - Marco Blanco": "$15.000"
+    },
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Él sólo comía. Yo vi una escena de timidez, pureza y ternura",
+    imageUrl: "/cabra.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 16,
+    title: "Animal Comiendo",
+    url: "a",
+    venta: {
+      "Fotografía 20x30 - Marco Blanco": "$15.000"
+    },
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Él sólo comía. Yo vi una escena de timidez, pureza y ternura",
+    imageUrl: "/animal-comiendo.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 16,
+    title: "Caballo en su pesebrera",
+    url: "a",
+    venta: {
+      "Fotografía 20x30 - Marco Blanco": "$20.000",
+      "Fotografía 30x40 - Marco Blanco": "$30.000"
+    },
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Él sólo comía. Yo vi una escena de timidez, pureza y ternura",
+    imageUrl: "/caballo-pesebrera.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 16,
+    title: "Perro",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Él sólo comía. Yo vi una escena de timidez, pureza y ternura",
+    imageUrl: "/perro.jpg",
     thumbnailUrl: "/images/thumbnails/1.jpg"
   },
   {
@@ -203,6 +306,43 @@ export const photos: Photo[] = [
     date: "2024",
     story: "El Baile de los Negros de Lora es una festividad religiosa que está reconocida como Tesoro Humano Vivo. Es un ritual con raíces prehispánicas que luego de la llegada de los españoles se mezcló con el cristianismo. El resultado es una ceremonia de adoración a la virgen, acompañado de pifilcas, bailes monótonos, mujeres mapuches pintadas de negro (‘las negras’) y hombres vestidos con cueros de animales (‘los encuerados’). Durante esta ceremonia, que ocurre cada tercer domingo de octubre, se adora y acompaña a una virgen de la que se dice que es natural, con pelo real. Es una celebración abierta al público.",
     imageUrl: "/baile-negro.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 17,
+    title: "Baile de los negros de Lora",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "El Baile de los Negros de Lora es una festividad religiosa que está reconocida como Tesoro Humano Vivo. Es un ritual con raíces prehispánicas que luego de la llegada de los españoles se mezcló con el cristianismo. El resultado es una ceremonia de adoración a la virgen, acompañado de pifilcas, bailes monótonos, mujeres mapuches pintadas de negro (‘las negras’) y hombres vestidos con cueros de animales (‘los encuerados’). Durante esta ceremonia, que ocurre cada tercer domingo de octubre, se adora y acompaña a una virgen de la que se dice que es natural, con pelo real. Es una celebración abierta al público.",
+    imageUrl: "/baile2.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 17,
+    title: "Baile de los negros de Lora",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "El Baile de los Negros de Lora es una festividad religiosa que está reconocida como Tesoro Humano Vivo. Es un ritual con raíces prehispánicas que luego de la llegada de los españoles se mezcló con el cristianismo. El resultado es una ceremonia de adoración a la virgen, acompañado de pifilcas, bailes monótonos, mujeres mapuches pintadas de negro (‘las negras’) y hombres vestidos con cueros de animales (‘los encuerados’). Durante esta ceremonia, que ocurre cada tercer domingo de octubre, se adora y acompaña a una virgen de la que se dice que es natural, con pelo real. Es una celebración abierta al público.",
+    imageUrl: "/baile3.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 17,
+    title: "Baile de los negros de Lora",
+    url: "a",
+    venta: {
+      "Fotografía 20x30 - Marco Negro": "$15.000",
+      "Fotografía 30x40 - Marco Negro": "$30.000"
+    },
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "El Baile de los Negros de Lora es una festividad religiosa que está reconocida como Tesoro Humano Vivo. Es un ritual con raíces prehispánicas que luego de la llegada de los españoles se mezcló con el cristianismo. El resultado es una ceremonia de adoración a la virgen, acompañado de pifilcas, bailes monótonos, mujeres mapuches pintadas de negro (‘las negras’) y hombres vestidos con cueros de animales (‘los encuerados’). Durante esta ceremonia, que ocurre cada tercer domingo de octubre, se adora y acompaña a una virgen de la que se dice que es natural, con pelo real. Es una celebración abierta al público.",
+    imageUrl: "/baile4.jpg",
     thumbnailUrl: "/images/thumbnails/1.jpg"
   },
   {
@@ -225,8 +365,52 @@ export const photos: Photo[] = [
     description: "Primera luz sobre la cordillera",
     technique: "Fotografía de paisaje",
     date: "2024",
-    story: "Esta fotografía captura...",
+    story: "En la Viña Los Nogales de la Localidad de Linares de Perales, tienen parras de 130 años de edad aproximadamente, las que son destinadas a la producción de vino. La localidad de Linares de Perales es rica en viñedos, y varios de sus vecinos venden sus propios vinos (y también otros productos que se obtiene de la uva) en la fiesta de la vendimia que se hace en el pueblo cada año. En el año en que hice este registro (2019) los recolectores aún usaban un sistema de fichas para llevar el conteo de cuántas cajas de uva entregaba cada uno.",
     imageUrl: "/recolector.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 19,
+    title: "Recolector de uvas",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/uvas2.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 19,
+    title: "Recolector de uvas",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/uvas3.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 19,
+    title: "Recolector de uvas",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/uvas4.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 19,
+    title: "Recolector de uvas",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/uvas5.jpg",
     thumbnailUrl: "/images/thumbnails/1.jpg"
   },
   {

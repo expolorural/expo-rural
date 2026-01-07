@@ -3,6 +3,8 @@ export interface Photo {
   title: string;
   main?: boolean;
   url: string;
+  venta?: object;
+  ubicacion?: string,
   description: string;
   technique: string;
   date: string;
