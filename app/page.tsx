@@ -5,8 +5,12 @@ import Footer from "@/components/Footer";
 import Titulo from "@/components/Titulo";
 import { photos } from "@/data/dataFotos";
 import "./style.css";
+import { redirect } from 'next/navigation';
 
 export default function Home() {
+
+  redirect('/galeria');
+
   return (
     <div className="page">
       <Header/>

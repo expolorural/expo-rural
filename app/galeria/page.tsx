@@ -6,6 +6,7 @@ import { photos } from "@/data/dataFotos";
 import "@/styles/Galeria.css";
 
 export default function Home() {
+  const fotos = photos.filter(foto => {return foto.main == true});
   return (
     <div className="page">
       <Header/>
@@ -15,7 +16,7 @@ export default function Home() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minima nam cum rem soluta odit architecto maiores facere aliquid molestiae? Cupiditate quia pariatur architecto dolorem omnis nesciunt vel porro maiores.</p>
       </div>
       <div className="galeria">
-        {photos.map((foto, index) => (
+        {fotos.map((foto, index) => (
           <Link 
             key={foto.id} 
             href={`/galeria/${foto.id}`}

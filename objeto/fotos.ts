@@ -1,6 +1,7 @@
 export interface Photo {
   id: number;
   title: string;
+  main?: boolean;
   url: string;
   description: string;
   technique: string;
