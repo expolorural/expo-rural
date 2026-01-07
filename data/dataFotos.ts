@@ -116,12 +116,60 @@ export const photos: Photo[] = [
     id: 9,
     title: "Forel",
     url: "a",
+    venta: {
+      "Fotografía 30x40 - Marco negro": "$30.000",
+      "Fotografía 20x30 - Marco negro": "$20.000"
+    },
     main: true,
     description: "No se que es un forel",
     technique: "Fotografía de paisaje",
     date: "2024",
-    story: "Esta fotografía captura...",
+    story: "Cierto día decidimos subirnos al Ramal con un amigo y le pedimos al chofer que nos dejara en la estación más linda. Nos recomendó Forel. Nos bajamos ahí y luego de caminar cerro arriba unos 45 minutos, nos encontramos con un villorrio y nos acercamos a una casa a preguntar si había algún almacén donde comprar, pero no había nada. En lugar de eso, la señora María, dueña de la casa, nos invitó a comer sopaipillas, pan amasado, tomar chicha de Curtiduría, conocer a su esposo, sus animales y a dar un paseo por el sector, el que hace meses había sufrido con los incendios forestales.",
     imageUrl: "/forel.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 9,
+    title: "Señora Maria",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/señora-maria.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 9,
+    title: "Señora Maria",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/forel3.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 9,
+    title: "Señora Maria",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/forel4.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 9,
+    title: "Señora Maria",
+    url: "a",
+    description: "Primera luz sobre la cordillera",
+    technique: "Fotografía de paisaje",
+    date: "2024",
+    story: "Esta fotografía captura...",
+    imageUrl: "/forel5.jpg",
     thumbnailUrl: "/images/thumbnails/1.jpg"
   },
   {
@@ -343,18 +391,6 @@ export const photos: Photo[] = [
     date: "2024",
     story: "El Baile de los Negros de Lora es una festividad religiosa que está reconocida como Tesoro Humano Vivo. Es un ritual con raíces prehispánicas que luego de la llegada de los españoles se mezcló con el cristianismo. El resultado es una ceremonia de adoración a la virgen, acompañado de pifilcas, bailes monótonos, mujeres mapuches pintadas de negro (‘las negras’) y hombres vestidos con cueros de animales (‘los encuerados’). Durante esta ceremonia, que ocurre cada tercer domingo de octubre, se adora y acompaña a una virgen de la que se dice que es natural, con pelo real. Es una celebración abierta al público.",
     imageUrl: "/baile4.jpg",
-    thumbnailUrl: "/images/thumbnails/1.jpg"
-  },
-  {
-    id: 18,
-    title: "Señora Maria",
-    url: "a",
-    main: true,
-    description: "Primera luz sobre la cordillera",
-    technique: "Fotografía de paisaje",
-    date: "2024",
-    story: "Esta fotografía captura...",
-    imageUrl: "/señora-maria.jpg",
     thumbnailUrl: "/images/thumbnails/1.jpg"
   },
   {
