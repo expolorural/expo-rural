@@ -1,0 +1,147 @@
+.page {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ---------------- TITULO ---------------- */
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.titulo h2 {
+    font-weight: 400;
+    margin: 15px 0 -10px 0;
+    text-decoration: underline;
+    text-decoration-color: #6b8e23;
+    text-underline-offset: 8px;
+    color: #5a7d3a;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.titulo-lorural {
+    font-family: "Kaushan Script", "Raleway", cursive;
+    font-size: clamp(5rem, 15vw, 9rem);
+    margin: 10px 0 0 0;
+    color: #3e5c2e;
+}
+
+.titulo p {
+    font-size: clamp(1.1rem, 2.2vw, 1.2rem);
+    line-height: 1.8;
+    color: #555;
+    max-width: 950px;
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+
+/* ---------------- GALERIA PINTEREST ---------------- */
+
+.galeria {
+    column-count: 3;
+    column-gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.galeria-foto {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Imagen */
+
+.galeria-foto-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Texto overlay */
+
+.texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0)
+    );
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.galeria-foto:hover .texto {
+    opacity: 1;
+}
+
+.texto h1 {
+    font-family: "Kaushan Script", "Raleway", cursive;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.titulo::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #6b8e23, transparent);
+    margin-top: 20px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 1200px) {
+    .galeria {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    .galeria {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .galeria {
+        column-count: 1;
+    }
+
+    .titulo p {
+        text-align: center;
+    }
+}
+
+/* ---------------- DECORACION ---------------- */
+
