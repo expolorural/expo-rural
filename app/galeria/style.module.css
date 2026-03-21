@@ -133,15 +133,5 @@
     }
 }
 
-@media (max-width: 500px) {
-    .galeria {
-        column-count: 1;
-    }
-
-    .titulo p {
-        text-align: center;
-    }
-}
-
 /* ---------------- DECORACION ---------------- */
 
