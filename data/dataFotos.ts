@@ -52,7 +52,7 @@ export const photos: Photo[] = [
     description: "Un pozo en el bosque",
     technique: "Fotografía de paisaje",
     date: "2024",
-    story: "En un rincón de Linares de Perales encontramos en sector de La Puntilla, que es donde se unen el Río Claro con el Río Maule. En este entorno y si aparente dueño, nos encontramos con este pozo solitario. ",
+    story: "En un rincón de Linares de Perales encontramos en sector de La Puntilla, que es donde se unen el Río Claro con el Río Maule. En este entorno y sin aparente dueño, nos encontramos con este pozo solitario. ",
     imageUrl: "/pozo.jpg",
     thumbnailUrl: "/images/thumbnails/1.jpg"
   },

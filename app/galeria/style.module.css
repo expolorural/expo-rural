@@ -52,16 +52,15 @@
 
 .galeria {
     column-count: 3;
-    column-gap: 20px;
-    width: 90%;
+    column-gap: 5px;
+    width: 98%;
     max-width: 1200px;
-    padding: 20px;
 }
 
 .galeria-foto {
     display: inline-block;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     break-inside: avoid;
     position: relative;
     border-radius: 12px;
@@ -130,6 +129,9 @@
 @media (max-width: 800px) {
     .galeria {
         column-count: 2;
+    }
+    .titulo p {
+        text-align: center;
     }
 }
 

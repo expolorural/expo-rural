@@ -14,7 +14,7 @@ export default function Home() {
       <Header/>
 
       <div className={styles.titulo}>
-        <h2>Exposicion</h2>
+        <h2>Exposición</h2>
         <h1 className={styles["titulo-lorural"]}>Lo Rural</h1>
 
         <p>
