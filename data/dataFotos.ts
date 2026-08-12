@@ -460,5 +460,17 @@ export const photos: Photo[] = [
     story: "Con la ayuda de su yegua, Don Pedro (90 años), pasa la rastra de clavos, que es un trabajo que se hace luego de pasar el arado. Esto a la vez, es parte de un proceso de varios pasaos para obtener tierra 'mullida' o bien molida y así la siembra pueda crecer adecuadamente.",
     imageUrl: "/don-pedro.png",
     thumbnailUrl: "/images/thumbnails/1.jpg"
+  },
+  {
+    id: 21,
+    title: "Señora Bernardita",
+    url: "a",
+    main: true,
+    description: "Señora Bernardita cociendo mote de trigo",
+    technique: "Fotografía de paisaje",
+    date: "2026",
+    story: "La cosecha es una actividad fundamental en la agricultura, donde se recolectan los productos maduros. En esta fotografía se captura el momento en que los agricultores comienzan la cosecha de sus cultivos, mostrando el esfuerzo y dedicación necesarios para obtener un buen rendimiento.",
+    imageUrl: "/señora.jpg",
+    thumbnailUrl: "/images/thumbnails/1.jpg"
   }
 ];
