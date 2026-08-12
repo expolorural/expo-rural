@@ -469,7 +469,7 @@ export const photos: Photo[] = [
     description: "Señora Bernardita cociendo mote de trigo",
     technique: "Fotografía de paisaje",
     date: "2026",
-    story: "La cosecha es una actividad fundamental en la agricultura, donde se recolectan los productos maduros. En esta fotografía se captura el momento en que los agricultores comienzan la cosecha de sus cultivos, mostrando el esfuerzo y dedicación necesarios para obtener un buen rendimiento.",
+    story: "La señora Bernardita, en la localidad de Concavén, aún cuece el mote de trigo como lo aprendió de su madre, quien falleció cuando ella tenía 10 años. Ella recoge la leña de litre, boldo u otros nativos que encuentra en el cerro para hacer la lejía, hace el fuego en la cocina de humo que construyó su abuelo, cuece el cereal junto a las cenizas, lo enjuaga con agua de vertiente una y otra vez hasta que quede limpio, lo friega en la piedra que heredó de su madre para ablandarlo, y luego lo vuelve a enjuagar para finalmente colgarlo, dejar que bote el agua y envasarlo para venderlo en la feria de Vichuquén, siendo el pueblo más cercano a unos 15 kilómetros de su casa.",
     imageUrl: "/señora.jpg",
     thumbnailUrl: "/images/thumbnails/1.jpg"
   }
